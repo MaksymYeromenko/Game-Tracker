@@ -1,22 +1,113 @@
-/*
-background = #0F1115
-header/panels = #181C24
-text/info = #E6E8EB
-buttons/other = #4F8CFF
-*/
 body {
-    background-color:#0F1115 ;
+  background-color: #0b1020;
+  padding-inline: 20px;
+  color: #ffff;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
-.text {
-    color:#E6E8EB ;
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
 .header {
-   color:#f8eddd ;
+  color: white;
 }
-.button {
-    background-color:#4F8CFF ;
-    color:#E6E8EB ;
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #374151;
+  width: fit-content;
+  background-color: #111827;
+  border-radius: 12px;
+  cursor: pointer;
 }
 
- 
+.card:hover {
+  transform: translateY(-2px);
+}
+.cardImg {
+  width: 276px;
+  height: 368px;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.cardContent {
+  padding: 12px;
+}
 
+.cardTitle {
+  font-weight: 600;
+  font-size: 16px;
+  max-lines: 2;
+}
+
+.cardStatus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 999px;
+  font-weight: 500;
+  width: fit-content;
+  line-height: 16px;
+  align-items: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+  min-width: 0;
+}
+.cardStatus--completed {
+  background-color: #065f46;
+}
+.cardStatus--wishlist {
+  background-color: #4c1d95;
+}
+.cardStatus--playing {
+  background-color: #163d75;
+}
+.cardStatus--dropped {
+  background-color: #7f1d1d;
+}
+.addGame {
+  height: 40px;
+  width: 100px;
+  align-self: center;
+  border-radius: 10px;
+  background-color: #8b5cf6;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.addGame:hover {
+  background-color: #7c3aed;
+}
+
+.cardFooter {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cardStars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardStars div {
+  font-size: 14px;
+}
+.cardActions {
+  font-size: 20px;
+}
+.cardStars img {
+  width: 20px;
+  /* filter: invert(93%) sepia(84%) saturate(2%) hue-rotate(360deg) brightness(107%) contrast(101%); */
+}
