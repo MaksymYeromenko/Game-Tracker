@@ -9,28 +9,30 @@
   <body>
     <div class="headerContainer">
       <h1 class="header">My game library</h1>
-      <button class="addGame">+ Add Game</button>
+      <button class="addGame" id="addGameButton">+ Add Game</button>
     </div>
-    <div class="gameCardsContainer">
-      <div class="card">
-        <img src="/images/Gta6.jpg" alt="gta6 image" class="cardImg" />
-        <div class="cardContent">
-          <h3 class="cardTitle">GTA 6</h3>
-          <div class="cardStatus cardStatus--completed">Completed</div>
-          <div class="cardFooter">
-            <div class="cardStars">
-              <img src="/images/star-rate-svgrepo-com.svg" alt="star" />
-              <img src="/images/star-rate-svgrepo-com.svg" alt="star" />
-              <img src="/images/star-rate-svgrepo-com.svg" alt="star" />
-              <img src="/images/star-rate-svgrepo-com.svg" alt="star" />
-              <img src="/images/star-rate-svgrepo-com.svg" alt="star" />
-              <div>5.0</div>
+    <div class="gameCardsContainer" id="mainPage">
+      <div class="cardsContainer" id="mainCardContainer">
+        <div class="card">
+          <img src="/images/Gta6.jpg" alt="gta6 image" class="cardImg" />
+          <div class="cardContent">
+            <h3 class="cardTitle">GTA 6</h3>
+            <div class="cardStatus cardStatus--completed">Completed</div>
+            <div class="cardFooter">
+              <div class="cardStars">
+                <img src="/images/star-rate-svgrepo-com.svg" alt="star" />
+                <img src="/images/star-rate-svgrepo-com.svg" alt="star" />
+                <img src="/images/star-rate-svgrepo-com.svg" alt="star" />
+                <img src="/images/star-rate-svgrepo-com.svg" alt="star" />
+                <img src="/images/star-rate-svgrepo-com.svg" alt="star" />
+                <div>5.0</div>
+              </div>
+              <div class="cardActions">...</div>
             </div>
-            <div class="cardActions">...</div>
           </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
